@@ -8,9 +8,6 @@ if(empty($items)){
 ?>
 
 <h1>Welcome, <?=$_SESSION['name']?></h1>
-<a href='/postad'>Sell Item</a><br>
-<a href='/store'>Go to Store</a><br>
-<a href='/logout'>Logout</a>
 <div>
 <span id='msg'><?=isset($msg)?$msg:''?></span>
 

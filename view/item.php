@@ -7,17 +7,12 @@ if(!$item){
 }
 ?>
 
-<?=isset($_SESSION['uid'])?"<h1>Welcome, <a href='/'>" . $_SESSION['name'] . "</a></h1>":''?>
-<a href='/postad'>Sell Item</a></br>
-<a href='/store'>Go to Store</a></br>
-<?=isset($_SESSION['uid'])?"<a href='/logout'>Logout</a><br>":''?>
 <div>
 <span id='msg'><?=isset($msg)?$msg:''?></span><br>
 
 <?php
 if($item){
-	echo "<table style='
-        border: 2px solid wheat;'>
+	echo "<table class='table table-bordered'>
 			<tr>
 				<th>Image</td>
 				<th>Title</td>
@@ -31,7 +26,7 @@ if($item){
 	$item['price'] = empty($item['price'])?"On donation":$item['price'];
 
 		echo "<tr>
-				<td><img width=100px height=50px src='/img/" . $path . "'></td>
+				<td><a href='/img/" . $path . "'><img style='cursor:zoom-in;' width=200px height=150px src='/img/" . $path . "'></a></td>
 				<td>" . $item['title'] . "</td>
 				<td>" . $item['description'] . "</td>
 				<td>" . $item['price'] . "</td>

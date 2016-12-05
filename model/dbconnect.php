@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST' , 'localhost');
-define('DB_USER' , 'jharvard');
-define('DB_PWD' , 'crimson');
-define('DB_NAME' , 'sophomor');
+define('DB_HOST' , 'ENTER YOUR HOST NAME');
+define('DB_USER' , 'ENTER YOUR DB USERNAME');
+define('DB_PWD' , 'ENTER YOUR DB PWD');
+define('DB_NAME' , 'ENTER YOUR DB NAME');
 
 $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
 

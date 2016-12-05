@@ -5,7 +5,6 @@
         <link rel=stylesheet type="text/css" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <link rel=stylesheet type="text/css" href="/css/styles.css">
-        <link rel="icon" href="/img/favicon.png" type="image/x-icon" />
         <link rel="icon" href="static/img/favicon.png" type="image/x-icon" />
 		<style>
 		table, th, td {
@@ -16,3 +15,4 @@
     </head>
     <body>
         <div class="container">
+            <?php render('navbar'); ?>
